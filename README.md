@@ -15,11 +15,14 @@ https://serpapi.com/
 ```bash
 python -m src.main 'https://example.com/image.jpg?foo=1&bar=2'
 ```
+※画像のurlをコロンで囲むこと！
 
 ## 出力されたデータの確認方法
 fleamarket_links_YYYYMMDD_HHMMSS.csv が`output_url_csv/` ディレクトリ内に生成
 
-CSV 先頭に以下のメタ情報が入ります（`#` 始まりのコメント行）:
+CSV 先頭に以下のメタ情報が入ります（`#` 始まりのコメント行）
+
+出力されるCSVの構造: 
 
 ```bash
 # command: python -m src.main <URL>

@@ -1,4 +1,4 @@
 .env
 .venv/
-output_url_csv/
+output_url_csv/**
 src/__pycache__/
