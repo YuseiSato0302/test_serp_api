@@ -1,4 +1,7 @@
 .env
 .venv/
-output_url_csv/**
 src/__pycache__/
+# output_url_csv 配下のすべてを無視
+output_url_csv/**
+# ただしプレースホルダ用ファイルは例外として保持
+!output_url_csv/.gitkeep
