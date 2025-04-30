@@ -13,7 +13,16 @@ cp .env.example .env
 ## 実行方法
 
 ```bash
-# 画像 URL をそのまま渡す
-python -m src.main {画像URL}
-# → test_serp_api.csv が生成
+python -m src.main 'https://example.com/image.jpg?foo=1&bar=2'
+# → fleamarket_links_YYYYMMDD_HHMMSS.csv が生成
 ```
+
+CSV 先頭に以下のメタ情報が入ります（`#` 始まりのコメント行）:
+
+```bash
+# command: python -m src.main <URL>
+# input_url: <URL>
+```
+
+続いて `link` 列に検索結果 URL が並びます。
+CSV は `output_url_csv/` ディレクトリに保存されます。
